@@ -1,6 +1,6 @@
 var totalPrice = 0;
-const priceOfPhone = 100;
-const accessoryPrice = 10;
+var priceOfPhone = 100;
+var accessoryPrice = 10;
 var accessoryAmount = 0;
 var phonesAmount = 0;
 const TAX_RATE = 0.08;
@@ -8,9 +8,9 @@ priceOfPhone = priceOfPhone + (priceOfPhone * TAX_RATE);
 accessoryPrice = accessoryPrice + (accessoryPrice * TAX_RATE);
 console.log(priceOfPhone);
 console.log(accessoryPrice);
-/* var budget = prompt("How much money do you have?");
-budget = Number(budget); */
+// var budget = prompt("How much money do you have?");
 budget = 400;
+budget = Number(budget);
 function calculate() {
     while (budget > priceOfPhone) {
         budget -= priceOfPhone;
